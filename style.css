@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    /* display: flex;
+    align-items: center;
+    height: 100vh; */
+    
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards-container h2{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+.cards-container p{
+    opacity: .7;
+}
+.cards-container{
+    color: white;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 1.5rem;
+    /* border: 10px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+}
+
+.cars{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cars img{
+    height: 40px;
+    width: 64px;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    /* background-color: aliceblue; */
+}
+
+.cars a{
+    border: 2px solid whitesmoke;
+    border-radius: 2em;
+    padding: 1em 2em;
+    margin-top: auto;
+    color: inherit;
+    align-self: flex-start;
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    /* border-radius: 10px 10px 0 0; */
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    /* border-radius: 0 0 10px 10px; */
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal
+}
+
+.cards-container .sedan a{
+    color: hsl(31, 77%, 52%);
+    background-color: azure;
+}
+.cards-container .suv a{
+    color: hsl(184, 100%, 22%);
+    background-color: azure;
+}
+.cards-container .luxury a{
+    color: hsl(179, 100%, 13%);
+    background-color: azure;
+}
+
+@media (max-width:675px){
+    .cards-container{
+        flex-direction: column;
+    }
+    .cars{
+        width: unset;
+    }
+}
